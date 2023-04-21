@@ -4,19 +4,19 @@ import { render } from './util';
 render('variables1', () => {
   let foo = 'foo1';
   foo = 'foo2';
-  foo = 'foo3';
   return foo;
 });
 
 // TODO: Fix this code.
 render('variables2', () => {
-  const bar = 'bar';
+  let bar = 'bar';
   bar = 'bar';
   return bar;
 });
 
 // TODO: Fix this code.
 render('variables3', () => {
-  baz = 'baz';
+  let baz = 'baz';
+  baz = 3;
   return baz;
 });
